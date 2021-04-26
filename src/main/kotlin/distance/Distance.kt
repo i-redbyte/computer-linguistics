@@ -15,7 +15,6 @@ class Distance {
             s1 = text2
             s2 = text1
         }
-
         val currentRow = IntArray(m + 1)
         val previousRow = IntArray(m + 1)
         currentRow.mapIndexed { index, _ -> currentRow[index] = index }
