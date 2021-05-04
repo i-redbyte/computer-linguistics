@@ -1,6 +1,11 @@
-import distance.Distance
+
+import markov.MarkovChains
+import kotlin.random.Random
 
 fun main(args: Array<String>) {
-    val d = Distance()
-    println(d.distanceLevenshtein("Hello","hi"))
+
+    val m = MarkovChains(2,"ru_.txt")
+    for (i in 0..10) {
+        println(m.genMarkov(Random.nextInt(20)))
+    }
 }
